@@ -8,11 +8,9 @@
 
 @interface SERPickerController () <UIPickerViewDataSource, UIPickerViewDelegate>
 {
+  NSArray *_originalValues;
   NSArray *_transformedValues;
   NSString *_selectedValue;
-  NSDictionary *_mapping;
-  // TODO NSMapTable *_mapping; check with Availability.h for iOS 6 and greater deployment target
-  // advantage: would not need NSCopying
 }
 
 @property (nonatomic, copy) SERPickerCompletionBlock completionBlock;
@@ -104,10 +102,9 @@ static const NSTimeInterval kAnimationDuration = 0.25;
     mapping[originalValue] = string;
   }
   
+  _originalValues = originalValues;
   _transformedValues = strings;
   _selectedValue = nil;
-
-  _mapping = mapping;
 
   [self.pickerView reloadAllComponents];
   [self updatePickerSelection];
@@ -187,7 +184,15 @@ static const NSTimeInterval kAnimationDuration = 0.25;
 
   if (pickedValue)
   {
-    reverseTransformedValue = [[_mapping allKeysForObject:pickedValue] lastObject];
+    for(id originalValue in _originalValues)
+    {
+      NSString *transformedValue = self.transformationBlock(originalValue);
+      if ([transformedValue isEqualToString:pickedValue])
+      {
+        reverseTransformedValue = originalValue;
+        break;
+      }
+    }
   }
 
   self.completionBlock(reverseTransformedValue);
