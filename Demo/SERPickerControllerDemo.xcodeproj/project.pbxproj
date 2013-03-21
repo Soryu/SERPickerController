@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAB01F5E16FBAE8A00BFC6B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB01F5D16FBAE8A00BFC6B2 /* UIKit.framework */; };
+		DAB01F6016FBAE8A00BFC6B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB01F5F16FBAE8A00BFC6B2 /* Foundation.framework */; };
+		DAB01F6216FBAE8A00BFC6B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB01F6116FBAE8A00BFC6B2 /* CoreGraphics.framework */; };
+		DAB01F6816FBAE8A00BFC6B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAB01F6616FBAE8A00BFC6B2 /* InfoPlist.strings */; };
+		DAB01F6A16FBAE8A00BFC6B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB01F6916FBAE8A00BFC6B2 /* main.m */; };
+		DAB01F6E16FBAE8A00BFC6B2 /* SERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB01F6D16FBAE8A00BFC6B2 /* SERAppDelegate.m */; };
+		DAB01F7016FBAE8A00BFC6B2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB01F6F16FBAE8A00BFC6B2 /* Default.png */; };
+		DAB01F7216FBAE8A00BFC6B2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB01F7116FBAE8A00BFC6B2 /* Default@2x.png */; };
+		DAB01F7416FBAE8A00BFC6B2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB01F7316FBAE8A00BFC6B2 /* Default-568h@2x.png */; };
+		DAB01F7E16FBAF6300BFC6B2 /* SERPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB01F7D16FBAF6300BFC6B2 /* SERPickerController.m */; };
+		DAB01F8116FBAFC500BFC6B2 /* SERPickerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB01F8016FBAFC500BFC6B2 /* SERPickerDemoViewController.m */; };
+		DAB01F8416FBB26800BFC6B2 /* SERDomainModelCar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB01F8316FBB26800BFC6B2 /* SERDomainModelCar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAB01F5A16FBAE8A00BFC6B2 /* SERPickerControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SERPickerControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB01F5D16FBAE8A00BFC6B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DAB01F5F16FBAE8A00BFC6B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAB01F6116FBAE8A00BFC6B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DAB01F6516FBAE8A00BFC6B2 /* SERPickerControllerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SERPickerControllerDemo-Info.plist"; sourceTree = "<group>"; };
+		DAB01F6716FBAE8A00BFC6B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAB01F6916FBAE8A00BFC6B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAB01F6B16FBAE8A00BFC6B2 /* SERPickerControllerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SERPickerControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DAB01F6C16FBAE8A00BFC6B2 /* SERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SERAppDelegate.h; sourceTree = "<group>"; };
+		DAB01F6D16FBAE8A00BFC6B2 /* SERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SERAppDelegate.m; sourceTree = "<group>"; };
+		DAB01F6F16FBAE8A00BFC6B2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DAB01F7116FBAE8A00BFC6B2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DAB01F7316FBAE8A00BFC6B2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DAB01F7C16FBAF6300BFC6B2 /* SERPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERPickerController.h; sourceTree = "<group>"; };
+		DAB01F7D16FBAF6300BFC6B2 /* SERPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERPickerController.m; sourceTree = "<group>"; };
+		DAB01F7F16FBAFC500BFC6B2 /* SERPickerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERPickerDemoViewController.h; sourceTree = "<group>"; };
+		DAB01F8016FBAFC500BFC6B2 /* SERPickerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERPickerDemoViewController.m; sourceTree = "<group>"; };
+		DAB01F8216FBB26800BFC6B2 /* SERDomainModelCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERDomainModelCar.h; sourceTree = "<group>"; };
+		DAB01F8316FBB26800BFC6B2 /* SERDomainModelCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERDomainModelCar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB01F5716FBAE8A00BFC6B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB01F5E16FBAE8A00BFC6B2 /* UIKit.framework in Frameworks */,
+				DAB01F6016FBAE8A00BFC6B2 /* Foundation.framework in Frameworks */,
+				DAB01F6216FBAE8A00BFC6B2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAB01F5116FBAE8A00BFC6B2 = {
+			isa = PBXGroup;
+			children = (
+				DAB01F7A16FBAF4300BFC6B2 /* Libraries */,
+				DAB01F6316FBAE8A00BFC6B2 /* SERPickerControllerDemo */,
+				DAB01F5C16FBAE8A00BFC6B2 /* Frameworks */,
+				DAB01F5B16FBAE8A00BFC6B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB01F5B16FBAE8A00BFC6B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB01F5A16FBAE8A00BFC6B2 /* SERPickerControllerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB01F5C16FBAE8A00BFC6B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAB01F5D16FBAE8A00BFC6B2 /* UIKit.framework */,
+				DAB01F5F16FBAE8A00BFC6B2 /* Foundation.framework */,
+				DAB01F6116FBAE8A00BFC6B2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAB01F6316FBAE8A00BFC6B2 /* SERPickerControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DAB01F6C16FBAE8A00BFC6B2 /* SERAppDelegate.h */,
+				DAB01F6D16FBAE8A00BFC6B2 /* SERAppDelegate.m */,
+				DAB01F7F16FBAFC500BFC6B2 /* SERPickerDemoViewController.h */,
+				DAB01F8016FBAFC500BFC6B2 /* SERPickerDemoViewController.m */,
+				DAB01F8216FBB26800BFC6B2 /* SERDomainModelCar.h */,
+				DAB01F8316FBB26800BFC6B2 /* SERDomainModelCar.m */,
+				DAB01F6416FBAE8A00BFC6B2 /* Supporting Files */,
+			);
+			path = SERPickerControllerDemo;
+			sourceTree = "<group>";
+		};
+		DAB01F6416FBAE8A00BFC6B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB01F6516FBAE8A00BFC6B2 /* SERPickerControllerDemo-Info.plist */,
+				DAB01F6616FBAE8A00BFC6B2 /* InfoPlist.strings */,
+				DAB01F6916FBAE8A00BFC6B2 /* main.m */,
+				DAB01F6B16FBAE8A00BFC6B2 /* SERPickerControllerDemo-Prefix.pch */,
+				DAB01F6F16FBAE8A00BFC6B2 /* Default.png */,
+				DAB01F7116FBAE8A00BFC6B2 /* Default@2x.png */,
+				DAB01F7316FBAE8A00BFC6B2 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAB01F7A16FBAF4300BFC6B2 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DAB01F7B16FBAF6300BFC6B2 /* SERPickerController */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		DAB01F7B16FBAF6300BFC6B2 /* SERPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				DAB01F7C16FBAF6300BFC6B2 /* SERPickerController.h */,
+				DAB01F7D16FBAF6300BFC6B2 /* SERPickerController.m */,
+			);
+			name = SERPickerController;
+			path = ../SERPickerController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB01F5916FBAE8A00BFC6B2 /* SERPickerControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB01F7716FBAE8A00BFC6B2 /* Build configuration list for PBXNativeTarget "SERPickerControllerDemo" */;
+			buildPhases = (
+				DAB01F5616FBAE8A00BFC6B2 /* Sources */,
+				DAB01F5716FBAE8A00BFC6B2 /* Frameworks */,
+				DAB01F5816FBAE8A00BFC6B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SERPickerControllerDemo;
+			productName = SERPickerControllerDemo;
+			productReference = DAB01F5A16FBAE8A00BFC6B2 /* SERPickerControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB01F5216FBAE8A00BFC6B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SER;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Stanley Rost";
+			};
+			buildConfigurationList = DAB01F5516FBAE8A00BFC6B2 /* Build configuration list for PBXProject "SERPickerControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAB01F5116FBAE8A00BFC6B2;
+			productRefGroup = DAB01F5B16FBAE8A00BFC6B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB01F5916FBAE8A00BFC6B2 /* SERPickerControllerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB01F5816FBAE8A00BFC6B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB01F6816FBAE8A00BFC6B2 /* InfoPlist.strings in Resources */,
+				DAB01F7016FBAE8A00BFC6B2 /* Default.png in Resources */,
+				DAB01F7216FBAE8A00BFC6B2 /* Default@2x.png in Resources */,
+				DAB01F7416FBAE8A00BFC6B2 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB01F5616FBAE8A00BFC6B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB01F6A16FBAE8A00BFC6B2 /* main.m in Sources */,
+				DAB01F6E16FBAE8A00BFC6B2 /* SERAppDelegate.m in Sources */,
+				DAB01F7E16FBAF6300BFC6B2 /* SERPickerController.m in Sources */,
+				DAB01F8116FBAFC500BFC6B2 /* SERPickerDemoViewController.m in Sources */,
+				DAB01F8416FBB26800BFC6B2 /* SERDomainModelCar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAB01F6616FBAE8A00BFC6B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB01F6716FBAE8A00BFC6B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAB01F7516FBAE8A00BFC6B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAB01F7616FBAE8A00BFC6B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAB01F7816FBAE8A00BFC6B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SERPickerControllerDemo/SERPickerControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SERPickerControllerDemo/SERPickerControllerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAB01F7916FBAE8A00BFC6B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SERPickerControllerDemo/SERPickerControllerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SERPickerControllerDemo/SERPickerControllerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB01F5516FBAE8A00BFC6B2 /* Build configuration list for PBXProject "SERPickerControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB01F7516FBAE8A00BFC6B2 /* Debug */,
+				DAB01F7616FBAE8A00BFC6B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB01F7716FBAE8A00BFC6B2 /* Build configuration list for PBXNativeTarget "SERPickerControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB01F7816FBAE8A00BFC6B2 /* Debug */,
+				DAB01F7916FBAE8A00BFC6B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAB01F5216FBAE8A00BFC6B2 /* Project object */;
+}
