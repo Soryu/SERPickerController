@@ -90,8 +90,7 @@ static const NSTimeInterval kAnimationDuration = 0.25;
 {
   NSAssert([originalValues count] > 0, @"values cannot be nil or empty");
   
-  NSMutableArray *strings      = [NSMutableArray array];
-  NSMutableDictionary *mapping = [NSMutableDictionary dictionary];
+  NSMutableArray *strings = [NSMutableArray array];
 
   for(id originalValue in originalValues)
   {
@@ -99,7 +98,6 @@ static const NSTimeInterval kAnimationDuration = 0.25;
     NSAssert([string isKindOfClass:[NSString class]], @"transformed value must be a string");
 
     [strings addObject:string];
-    mapping[originalValue] = string;
   }
   
   _originalValues = originalValues;

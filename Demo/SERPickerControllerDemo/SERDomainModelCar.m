@@ -8,10 +8,6 @@
 
 #import "SERDomainModelCar.h"
 
-@interface SERDomainModelCar()
-
-@end
-
 @implementation SERDomainModelCar
 
 + (instancetype)carOfType:(CAR_TYPE)type
@@ -38,18 +34,6 @@
   NSAssert(string, @"unknown type");
   
   return string;
-}
-
-- (id)copyWithZone:(NSZone *)zone
-{
-  SERDomainModelCar *copy = [[self class] new];
-
-  if (copy)
-  {
-    copy.type = self.type;
-  }
-
-  return copy;
 }
 
 - (NSString *)description

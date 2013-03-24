@@ -4,7 +4,7 @@
 //  Copyright (c) 2013 Stanley Rost
 //
 
-typedef NSString *(^SERPickerTransformationBlock)(id<NSCopying>);
+typedef NSString *(^SERPickerTransformationBlock)(id);
 typedef void (^SERPickerCompletionBlock)(id);
 
 @interface SERPickerController : UIViewController

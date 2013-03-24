@@ -15,7 +15,7 @@ typedef enum {
   CAR_TYPE_LOTUS
 } CAR_TYPE;
 
-@interface SERDomainModelCar : NSObject <NSCopying>
+@interface SERDomainModelCar : NSObject
 
 + (instancetype)carOfType:(CAR_TYPE)type;
 + (NSString *)stringForType:(CAR_TYPE)type;
