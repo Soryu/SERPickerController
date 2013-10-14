@@ -41,6 +41,9 @@ static const NSTimeInterval kAnimationDuration = 0.25;
 
 - (void)loadView
 {
+  self.baseView = [UIView new];
+  self.baseView.backgroundColor = [UIColor whiteColor];
+  
   self.pickerView = [UIPickerView new];
   self.pickerView.showsSelectionIndicator = YES;
   self.pickerView.dataSource = self;
@@ -67,6 +70,7 @@ static const NSTimeInterval kAnimationDuration = 0.25;
   [self.capturingView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cancelButtonPressed:)]];
   
   self.view = [UIView new];
+  [self.view addSubview:self.baseView];
   [self.view addSubview:self.capturingView];
   [self.view addSubview:self.toolbar];
   [self.view addSubview:self.pickerView];
@@ -130,18 +134,24 @@ static const NSTimeInterval kAnimationDuration = 0.25;
   [self updatePickerSelection];
   
   self.view.frame = presentingView.bounds;
-  self.capturingView.frame = self.view.bounds;
   
   CGFloat viewWidth  = self.view.frame.size.width;
   CGFloat viewHeight = self.view.frame.size.height;
   
-  self.toolbar.frame    = CGRectMake(0.0, viewHeight - kToolbarHeight - kPickerHeight, viewWidth, kToolbarHeight);
-  self.pickerView.frame = CGRectMake(0.0, viewHeight - kPickerHeight, viewWidth, kPickerHeight);
+  CGRect pickerFrame    = CGRectMake(0.0, viewHeight - kPickerHeight, viewWidth, kPickerHeight);
+  CGRect capturingFrame = CGRectMake(0.0, 0.0, viewWidth, viewHeight - kPickerHeight - kToolbarHeight);
+  CGRect toolbarFrame   = CGRectMake(0.0, viewHeight - kToolbarHeight - kPickerHeight, viewWidth, kToolbarHeight);
+  
+  self.baseView.frame      = pickerFrame;
+  self.capturingView.frame = [self.capturingView.superview bounds];
+  self.toolbar.frame       = toolbarFrame;
+  self.pickerView.frame    = pickerFrame;
   
   [presentingView addSubview:self.view];
 
   self.toolbar.transform    = CGAffineTransformMakeTranslation(0.0, kToolbarHeight + kPickerHeight);
   self.pickerView.transform = CGAffineTransformMakeTranslation(0.0, kToolbarHeight + kPickerHeight);
+  self.baseView.transform   = CGAffineTransformMakeTranslation(0.0, kToolbarHeight + kPickerHeight);
   
   [UIView animateWithDuration:kAnimationDuration
     delay:0.0
@@ -150,6 +160,8 @@ static const NSTimeInterval kAnimationDuration = 0.25;
       self.view.alpha = 1.0;
       self.toolbar.transform    = CGAffineTransformIdentity;
       self.pickerView.transform = CGAffineTransformIdentity;
+      self.baseView.transform   = CGAffineTransformIdentity;
+      self.capturingView.frame = capturingFrame;
     }
     completion:NULL
   ];
@@ -164,6 +176,8 @@ static const NSTimeInterval kAnimationDuration = 0.25;
       self.view.alpha = 0.0;
       self.toolbar.transform    = CGAffineTransformMakeTranslation(0.0, kToolbarHeight + kPickerHeight);
       self.pickerView.transform = CGAffineTransformMakeTranslation(0.0, kToolbarHeight + kPickerHeight);
+      self.baseView.transform   = CGAffineTransformMakeTranslation(0.0, kToolbarHeight + kPickerHeight);
+      self.capturingView.frame  = [self.capturingView.superview bounds];
     }
     completion:^(BOOL finished) {
       [self.view removeFromSuperview];

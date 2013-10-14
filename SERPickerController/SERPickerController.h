@@ -14,6 +14,7 @@ typedef void (^SERPickerCompletionBlock)(id);
  */
 @property (nonatomic, strong) UIToolbar *toolbar;
 @property (nonatomic, strong) UIView *capturingView;
+@property (nonatomic, strong) UIView *baseView;
 @property (nonatomic, strong) UIPickerView *pickerView;
 
 @property (nonatomic, copy) SERPickerTransformationBlock transformationBlock;
