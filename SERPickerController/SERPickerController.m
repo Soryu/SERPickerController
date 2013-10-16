@@ -98,7 +98,12 @@ static const NSTimeInterval kAnimationDuration = 0.25;
 
   for(id originalValue in originalValues)
   {
-    NSString *string = self.transformationBlock(originalValue);
+    NSString *string = nil;
+    if (self.transformationBlock)
+      string = self.transformationBlock(originalValue);
+    else
+      string = originalValue;
+    
     NSAssert([string isKindOfClass:[NSString class]], @"transformed value must be a string");
 
     [strings addObject:string];
@@ -116,7 +121,10 @@ static const NSTimeInterval kAnimationDuration = 0.25;
 {
   if (originalValue)
   {
-    _selectedValue = self.transformationBlock(originalValue);
+    if (self.transformationBlock)
+      _selectedValue = self.transformationBlock(originalValue);
+    else
+      _selectedValue = originalValue;
   }
   else
   {
@@ -198,7 +206,12 @@ static const NSTimeInterval kAnimationDuration = 0.25;
   {
     for(id originalValue in _originalValues)
     {
-      NSString *transformedValue = self.transformationBlock(originalValue);
+      NSString *transformedValue = nil;
+      if (self.transformationBlock)
+        transformedValue = self.transformationBlock(originalValue);
+      else
+        transformedValue = originalValue;
+      
       if ([transformedValue isEqualToString:pickedValue])
       {
         reverseTransformedValue = originalValue;
